@@ -1,3 +1,5 @@
-from django.test import TestCase
-
-# Create your tests here.
+from djangoRestProject.ServiceProviders.test_files import (
+    provider_tests,
+    service_area_tests,
+    end_to_end_tests,
+)

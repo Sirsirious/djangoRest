@@ -26,9 +26,9 @@ class Migration(migrations.Migration):
                 ),
                 ("name", models.CharField(max_length=100)),
                 ("email", models.CharField(max_length=100)),
-                ("phone_number", models.CharField(max_length=100)),
-                ("language", models.CharField(max_length=100)),
-                ("currency", models.CharField(max_length=100)),
+                ("phone_number", models.CharField(max_length=20)),
+                ("language", models.CharField(max_length=10)),
+                ("currency", models.CharField(max_length=10)),
             ],
         ),
         migrations.CreateModel(
