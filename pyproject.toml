@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "djangorest"
+version = "0.1.0"
+description = ""
+authors = ["Tiago Duque <tduque@teamworks.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.4"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.5"
+drf-yasg = "^1.21.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
