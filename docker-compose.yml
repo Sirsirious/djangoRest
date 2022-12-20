@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 services:
   web:
     build: .
@@ -9,6 +9,8 @@ services:
       - .:/code
     depends_on:
       - db
+    environment:
+      - "ENV=docker"
   db:
     container_name: db
     hostname: db
@@ -21,6 +23,7 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
+
 
 volumes:
     postgres_data:

@@ -50,6 +50,9 @@ class ServiceAreaMatch(APIView):
         """
         API endpoint that allows one to search for ServiceAreas that match a given point.
         """
+        # Onto the fact that this is not MVC Compliant: I am aware of that, but I am not sure how to do it in a
+        # better way, especially as I lack deep knowledge about Django framework inner workings. As I wanted to create
+        # an elegant solution within the proposed timeframe, I decided to move this way.
         # Get the input data from serializer
         serializer = ServiceAreaMatchInputSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
